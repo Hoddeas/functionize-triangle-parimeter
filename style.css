@@ -4,3 +4,28 @@ body {
   padding: 20px;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.vertex {
+  font-weight: normal;
+  display: inline;
+}
+
+input {
+  height: 20px;
+  width: 55px;
+}
+
+button {
+  background-color: rgb(37, 37, 37);
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  width: 140px;
+  height: 28px;
+  padding-top: 3px;
+}
+
+.output {
+  padding-top: 5px;
+  line-height: 25px;
+}

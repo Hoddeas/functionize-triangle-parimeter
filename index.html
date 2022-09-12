@@ -15,13 +15,46 @@
 
   <body>
     <h1>Triangle Perimeter</h1>
-    <hr />
+    <hr/>
 
     <h3>Perimeter = AB + AC + BC</h3>
     <p>
       <img src="img/triangle-vertices.PNG" alt="Triangle Image" width="400" />
     </p>
 
-    <hr />
+    <hr/>
+
+    <p>Enter the vertices of a triangle and click "Calculate" to determine the side lengths and perimeter of the triangle.</p>
+
+    <h3>Vertex A 
+      <p class="vertex">
+        - xA: <input type="number" id="xA"/> 
+        yA: <input type="number" id="yA"/>
+      </p>
+    </h3>
+    <h3>Vertex B 
+      <p class="vertex">
+        - xB: <input type="number" id="xB"/> 
+        yB: <input type="number" id="yB"/>
+      </p>
+    </h3>
+    <h3>Vertex C 
+      <p class="vertex">
+        - xC: <input type="number" id="xC"/> 
+        yC: <input type="number" id="yC"/>
+      </p>
+    </h3>
+
+    <hr/><br>
+
+    <button id="calculate">CALCULATE</button>
+
+    <p class="output">
+      AB = <span id="AB">-----</span><br>
+      AC = <span id="AC">-----</span><br>
+      BC = <span id="BC">-----</span><br>
+      Perimeter of ABC = <span id="perimeter">-----</span>
+    </p>
+
   </body>
 </html>
