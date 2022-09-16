@@ -11,19 +11,24 @@ function calculate() {
     let yB = document.getElementById("yB").value;
     let xC = document.getElementById("xC").value;
     let yC = document.getElementById("yC").value;
+    
+    // Calculate Side Lengths
+    var AB = dist(xA, yA, xB, yB);
+    var AC = dist(xA, yA, xC, yC);
+    var BC = dist(xB, yB, xC, yC);
 
     // Give Side Lengths
     // Side AB Length
-    document.getElementById("AB").innerHTML = dist(xA, yA, xB, yB);
+    document.getElementById("AB").innerHTML = AB;
 
     // Side AC Length
-    document.getElementById("AC").innerHTML = dist(xA, yA, xC, yC);
+    document.getElementById("AC").innerHTML = AC;
 
     // Side BC Length
-    document.getElementById("BC").innerHTML = dist(xB, yB, xC, yC);
+    document.getElementById("BC").innerHTML = BC;
 
     // Give Perimeter
-    document.getElementById("perimeter").innerHTML = (dist(xA, yA, xB, yB) + dist(xA, yA, xC, yC) + dist(xB, yB, xC, yC));
+    document.getElementById("perimeter").innerHTML = (AB + AC + BC);
 
     // Calculate Side Lengths
     function dist(x1, y1, x2, y2) {
